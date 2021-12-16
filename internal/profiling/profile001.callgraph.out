@@ -1,0 +1,180 @@
+positions: instr line
+events: alloc_space(kB)
+
+ob=(1) profiling.test
+fl=(1) C:\Program Files\Go\src\bytes\buffer.go
+fn=(1) bytes.NewBuffer
+0x5640d8 451 143366
+
+ob=(1)
+fl=(2) C:\Users\a.hmelev\go\src\ultimate-go\internal\profiling\profiling_test.go
+fn=(2) github.com/chipazawra/ultimate-go/internal/profiling.algOne
++78 62 14336
+
+ob=(1)
+fl=(3) C:\Program Files\Go\src\runtime\proc.go
+fn=(3) runtime.allocm
+-748918 1875 512
+
+ob=(1)
+fl=(3)
+fn=(4) runtime.malg
++20343 4220 512
+
+ob=(1)
+fl=(4) C:\Program Files\Go\src\testing\benchmark.go
+fn=(5) testing.(*B).ResetTimer
++478343 151 512
+
+ob=(1)
+fl=(3)
+fn=(6) runtime.mstart0
+-500899 1365 0
+cfl=(3)
+cfn=(7) runtime.mstart1
+calls=0 -500632 1414
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(7)
++267 1414 0
+cfl=(3)
+cfn=(8) runtime.schedule
+calls=0 +14866 3374
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(9) runtime.newm
++3860 2201 0
+cfl=(3)
+cfn=(3)
+calls=0 +1946 1875
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(10) runtime.startm
++1828 2485 0
+cfl=(3)
+cfn=(9)
+calls=0 * 2201
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(11) runtime.wakep
++1323 2584 0
+cfl=(3)
+cfn=(10)
+calls=0 * 2485
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(12) runtime.resetspinning
++6123 3216 0
+cfl=(3)
+cfn=(11)
+calls=0 * 2584
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(8)
++1465 3374 0
+cfl=(3)
+cfn=(12)
+calls=0 * 3216
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(13) runtime.newproc.func1
++8209 4255 0
+cfl=(3)
+cfn=(14) runtime.newproc1
+calls=0 +8438 4305
+* * 512
+
+ob=(1)
+fl=(3)
+fn=(14)
++229 4305 0
+cfl=(3)
+cfn=(4)
+calls=0 -519 4220
+* * 512
+
+ob=(1)
+fl=(5) C:\Program Files\Go\src\runtime\asm_amd64.s
+fn=(15) runtime.mstart
++135889 248 0
+cfl=(3)
+cfn=(6)
+calls=0 -23304 1365
+* * 512
+
+ob=(1)
+fl=(5)
+fn=(16) runtime.systemstack
++265 383 0
+cfl=(3)
+cfn=(13)
+calls=0 -136118 4255
+* * 512
+
+ob=(1)
+fl=(4)
+fn=(17) testing.(*B).runN
++341911 190 0
+cfl=(4)
+cfn=(5)
+calls=0 +341441 151
+* * 512
++33 192 0
+cfl=(2)
+cfn=(18) github.com/chipazawra/ultimate-go/internal/profiling.BenchmarkAlgorithmOne
+calls=0 +251154 176
+* * 157702
+
+ob=(1)
+fl=(4)
+fn=(19) testing.(*B).run1.func1
++1523 232 0
+cfl=(4)
+cfn=(17)
+calls=0 -33 190
+* * 512
+
+ob=(1)
+fl=(4)
+fn=(20) testing.(*B).launch
++1516 328 0
+cfl=(4)
+cfn=(17)
+calls=0 -1523 192
+* * 157702
+
+ob=(1)
+fl=(2)
+fn=(2)
++246612 58 0
+cfl=(1)
+cfn=(1)
+calls=0 +246612 451
+* * 143366
+
+ob=(1)
+fl=(2)
+fn=(18)
++1470 176 0
+cfl=(2)
+cfn=(2)
+calls=0 * 58
+* * 143366
+cfl=(2)
+cfn=(2)
+calls=0 +78 62
+* * 14336
